@@ -4,6 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "JetBrains-Mono";
+  src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf") format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
@@ -61,6 +69,17 @@ body {
   #logo-header {
     height: 60px;
   }
+}
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font-jetbrains {
+  font-family: "JetBrains-Mono", "Courier New", Courier, monospace;
+}
+
+.text-sec-green {
+  color: #77FFC0;
 }
 
 /*# sourceMappingURL=styles.css.map */
