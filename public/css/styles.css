@@ -98,6 +98,9 @@ body {
   .grouper {
     text-align: center;
   }
+  .grouper img {
+    max-width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
