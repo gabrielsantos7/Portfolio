@@ -1,5 +1,6 @@
-@import './colors';
-@import './fonts';
+@import "./colors";
+@import "./fonts";
+@import "./utilities.scss";
 
 * {
   padding: 0;
@@ -56,20 +57,24 @@ body {
   }
 }
 
+.btn-success {
+  background: $primary-green;
+  color: $main-black;
+  transition: all 1s ease;
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    background: $primary-green;
+    color: $main-black;
+    transform: scale(1.2);
+  }
+}
+
 @media screen and (max-width: 767px) {
   #logo-header {
     height: 60px;
   }
-}
-
-.font-lato {
-  font-family: "Lato", sans-serif;
-}
-
-.font-jetbrains {
-  font-family: "JetBrains-Mono", 'Courier New', Courier, monospace;
-}
-
-.text-sec-green {
-  color: $secondary-green;
 }

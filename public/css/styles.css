@@ -12,6 +12,18 @@
   font-family: "JetBrains-Mono";
   src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf") format("truetype");
 }
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font-jetbrains {
+  font-family: "JetBrains-Mono", "Courier New", Courier, monospace;
+}
+
+.text-sec-green {
+  color: #77FFC0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -65,21 +77,24 @@ body {
   border: 2px solid #00FF88;
 }
 
+.btn-success {
+  background: #00FF88;
+  color: #201B2C;
+  transition: all 1s ease;
+}
+.btn-success i {
+  font-size: 1.25rem;
+}
+.btn-success:hover {
+  background: #00FF88;
+  color: #201B2C;
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 767px) {
   #logo-header {
     height: 60px;
   }
-}
-.font-lato {
-  font-family: "Lato", sans-serif;
-}
-
-.font-jetbrains {
-  font-family: "JetBrains-Mono", "Courier New", Courier, monospace;
-}
-
-.text-sec-green {
-  color: #77FFC0;
 }
 
 /*# sourceMappingURL=styles.css.map */
