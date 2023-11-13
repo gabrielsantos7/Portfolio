@@ -95,6 +95,9 @@ body {
   #logo-header {
     height: 60px;
   }
+  .grouper {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
