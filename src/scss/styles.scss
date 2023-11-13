@@ -38,6 +38,10 @@ body {
 
 .navbar-toggler {
   border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .bi-list {
@@ -73,6 +77,10 @@ body {
   }
 }
 
+.custom-list {
+  list-style-image: url("../img/cube.png");
+}
+
 @media screen and (max-width: 767px) {
   #logo-header {
     height: 60px;
@@ -80,9 +88,13 @@ body {
 
   .grouper {
     text-align: center;
-    
+
     img {
       max-width: 90%;
     }
+  }
+
+  h3 {
+    font-size: 3.5vw;
   }
 }

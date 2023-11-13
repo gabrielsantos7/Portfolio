@@ -24,6 +24,14 @@
   color: #77FFC0;
 }
 
+.text-dark {
+  color: #201B2C;
+}
+
+.bg-green {
+  background-color: #00FF88;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -60,6 +68,9 @@ body {
 .navbar-toggler {
   border: none;
 }
+.navbar-toggler:focus {
+  box-shadow: none;
+}
 
 .bi-list {
   color: #fff;
@@ -91,6 +102,10 @@ body {
   transform: scale(1.2);
 }
 
+.custom-list {
+  list-style-image: url("../img/cube.png");
+}
+
 @media screen and (max-width: 767px) {
   #logo-header {
     height: 60px;
@@ -100,6 +115,9 @@ body {
   }
   .grouper img {
     max-width: 90%;
+  }
+  h3 {
+    font-size: 3.5vw;
   }
 }
 
