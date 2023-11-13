@@ -11,5 +11,26 @@ body {
 }
 
 #logo-header {
-  height: 50px;
+  height: 40px;
 }
+
+.navbar {
+  background: $main-black;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.bi-list {
+  color: $main-white;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  #logo-header {
+    height: 55px;
+  }
+}
+
+

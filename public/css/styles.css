@@ -10,7 +10,26 @@ body {
 }
 
 #logo-header {
-  height: 50px;
+  height: 40px;
+}
+
+.navbar {
+  background: #201B2C;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.bi-list {
+  color: #fff;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  #logo-header {
+    height: 55px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
