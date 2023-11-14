@@ -119,6 +119,11 @@ h3 {
   font-size: 2vw;
 }
 
+#svg-download {
+  height: 20px;
+  width: auto;
+}
+
 @media screen and (max-width: 767px) {
   #logo-header {
     height: 60px;
