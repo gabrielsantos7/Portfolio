@@ -131,17 +131,37 @@ h3 {
 .grouper-habilities {
   border: 2px solid #fff;
   border-radius: 10px;
-  max-width: 57%;
+  max-width: 90%;
 }
 .grouper-habilities .active-option {
   background: #201B2C;
   border: 1px solid #fff;
   border-bottom: none;
+  color: #00FF88;
+}
+
+.nav-tabs .nav-link {
+  font-size: 1rem;
+}
+.nav-tabs .nav-link:not(.active-option) {
+  border: none;
+  color: #ddd;
+}
+.nav-tabs .nav-link:not(.active-option):hover {
   color: #77FFC0;
 }
 
-.nav-tabs .nav-link:not(.active-option) {
-  border: none;
+#front-end img,
+#back-end img,
+#database img,
+#tools img {
+  height: auto;
+  width: 7vw;
+  cursor: pointer;
+}
+
+#tools > img:nth-child(4) {
+  height: 7vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -175,6 +195,34 @@ h3 {
   }
   img[alt="Foto Retrato"] {
     border: none;
+  }
+  .grouper-habilities {
+    margin: 0 auto;
+  }
+  #front-end img,
+  #back-end img,
+  #database img,
+  #tools img {
+    margin-top: -20px;
+    width: 10vw;
+  }
+  .dropdown-toggle {
+    background: #00FF88;
+  }
+  .dropdown-toggle:hover {
+    background: #00FF88;
+    color: #201B2C;
+  }
+  .dropdown-item {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 576px) {
+  #front-end img,
+  #back-end img,
+  #database img,
+  #tools img {
+    width: 12vw;
   }
 }
 

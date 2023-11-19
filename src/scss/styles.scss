@@ -86,7 +86,7 @@ img[alt="Foto de Perfil"] {
   transition: transform 0.6s ease-in-out;
 
   &:hover {
-    transform: rotate(20deg)
+    transform: rotate(20deg);
   }
 }
 
@@ -106,24 +106,44 @@ h3 {
 .grouper-habilities {
   border: 2px solid $main-white;
   border-radius: 10px;
-  max-width: 57%;
+  max-width: 90%;
 
   .active-option {
     background: $main-black;
     border: 1px solid $main-white;
     border-bottom: none;
-    color: $secondary-green;
+    color: $primary-green;
   }
 }
 
 .nav-tabs {
   .nav-link {
+    font-size: 1rem;
     &:not(.active-option) {
       border: none;
-    }    
+      color: #ddd;
+
+      &:hover {
+        color: $secondary-green;
+      }
+    }
   }
 }
 
+#front-end,
+#back-end,
+#database,
+#tools {
+  img {
+    height: auto;
+    width: 7vw;
+    cursor: pointer;
+  }
+}
+
+#tools > img:nth-child(4) {
+  height: 7vw;
+}
 
 @media screen and (max-width: 767px) {
   #logo-header {
@@ -135,7 +155,7 @@ h3 {
     margin: 0;
 
     li {
-      padding:5px
+      padding: 5px;
     }
   }
 
@@ -172,5 +192,42 @@ h3 {
 
   img[alt="Foto Retrato"] {
     border: none;
+  }
+
+  .grouper-habilities {
+    margin: 0 auto;
+  }
+
+  #front-end,
+  #back-end,
+  #database,
+  #tools {
+    img {
+      margin-top: -20px;
+      width: 10vw;
+    }
+  }
+
+  .dropdown-toggle {
+    background: $primary-green;
+    &:hover {
+      background: $primary-green;
+      color: $main-black;
+    }
+  }
+
+  .dropdown-item {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #front-end,
+  #back-end,
+  #database,
+  #tools {
+    img {
+      width: 12vw;
+    }
   }
 }
