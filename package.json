@@ -7,8 +7,8 @@
     "dev": "cross-env NODE_ENV=development webpack --progress --watch",
     "prod": "cross-env NODE_ENV=production webpack --progress --watch",
     "sass-live": "sass --watch src/scss/styles.scss:public/css/styles.css",
-    "sass-build": "sass src/scss/styles.scss:public/css/styles.css",
-    "server": "live-server --port=5000 --host=localhost --browser=chrome public"
+    "sass-build": "sass src/scss/styles.scss:public/css/styles.min.css --style compressed",
+    "server": "live-server --port=5000 --host=localhost public"
   },
   "keywords": [],
   "author": "",
