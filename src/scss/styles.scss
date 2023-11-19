@@ -155,6 +155,10 @@ h3 {
   margin-left: 5rem;
   border-left: 2px solid $secondary-green;
   max-width: 100%;
+
+  h3 {
+    color: $secondary-green
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -208,6 +212,7 @@ h3 {
 
   .grouper-habilities {
     margin: 0 auto;
+    max-width: 95%;
   }
 
   #front-end,
@@ -230,10 +235,23 @@ h3 {
 
   .dropdown-item {
     cursor: pointer;
+
+    &.active {
+      background: $primary-green;
+    }
   }
 
   .info-grouper {
-    text-align: center;
+    margin: 0 auto;
+    border-left: 0;
+    border-top: 2px solid $secondary-green;
+    max-width: 90%;
+
+    h3 {
+      font-size: 15pt;
+      margin-top: 2rem;
+      text-align: center;
+    }
   }
 }
 

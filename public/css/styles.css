@@ -177,6 +177,9 @@ h3 {
   border-left: 2px solid #77FFC0;
   max-width: 100%;
 }
+.info-grouper h3 {
+  color: #77FFC0;
+}
 
 @media screen and (max-width: 767px) {
   #logo-header {
@@ -212,6 +215,7 @@ h3 {
   }
   .grouper-habilities {
     margin: 0 auto;
+    max-width: 95%;
   }
   #front-end img,
   #back-end img,
@@ -230,7 +234,18 @@ h3 {
   .dropdown-item {
     cursor: pointer;
   }
+  .dropdown-item.active {
+    background: #00FF88;
+  }
   .info-grouper {
+    margin: 0 auto;
+    border-left: 0;
+    border-top: 2px solid #77FFC0;
+    max-width: 90%;
+  }
+  .info-grouper h3 {
+    font-size: 15pt;
+    margin-top: 2rem;
     text-align: center;
   }
 }
