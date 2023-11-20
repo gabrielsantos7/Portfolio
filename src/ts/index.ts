@@ -34,4 +34,8 @@ techImages.forEach((image, index) => {
   image.addEventListener("mouseover", () => {
     techHandler.updateTechInfo(index);
   });
+
+  image.addEventListener("mouseout", () => {
+    techHandler.updateTechInfo();
+  });
 });
