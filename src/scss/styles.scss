@@ -159,6 +159,14 @@ h3 {
   }
 }
 
+#front-end > img:nth-child(1) {
+  transform: scale(0.9);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .info-grouper {
   margin-left: 5rem;
   border-left: 2px solid $secondary-green;
