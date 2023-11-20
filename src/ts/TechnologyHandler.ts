@@ -10,16 +10,23 @@ export default class TechnologyHandler {
       return this.technologies;
    }
 
-   updateTechInfo(index: number): void {
+   updateTechInfo(index: number = -1): void {
       const techNameElement =
          document.querySelector<HTMLElement>('#tech-name')!;
       const techDescriptionElement =
          document.querySelector<HTMLElement>('#tech-description')!;
 
-      if (this.technologies[index]) {
+      if (index >= 0 && this.technologies[index]) {
          techNameElement.textContent = this.technologies[index].name;
          techDescriptionElement.textContent =
             this.technologies[index].description;
+      } else {
+         setTimeout(() => {
+            techNameElement.textContent =
+               'Interessado em mais informações sobre alguma tecnologia?';
+            techDescriptionElement.textContent =
+               'Interaja com a imagem da tecnologia desejada para obter mais informações sobre ela.';
+         }, 100);
       }
    }
 }

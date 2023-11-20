@@ -33,7 +33,7 @@ techImages.forEach((image, index) => {
     techHandler.updateTechInfo(index);
   });
 
-  image.addEventListener("mouseover", () => {
-    techHandler.updateTechInfo(index);
+  image.addEventListener("mouseout", () => {
+    techHandler.updateTechInfo();
   });
 });
