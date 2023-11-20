@@ -3,4 +3,5 @@ export type DropdownItemClickEvent = MouseEvent;
 export interface Technology {
   name: string;
   description: string;
+  imageFileName: string;
 }
