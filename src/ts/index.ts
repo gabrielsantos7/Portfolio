@@ -1,8 +1,8 @@
 import handleNavItemClick from './nav';
 import handleDropdownItemClick from './dropdown';
 
-const navItems = document.querySelectorAll('.nav.nav-tabs > .nav-item > .nav-link');
-const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+const navItems = document.querySelectorAll<HTMLButtonElement>('.nav.nav-tabs .nav-item button.nav-link');
+const dropdownItems = document.querySelectorAll<HTMLLIElement>('.dropdown-menu .dropdown-item');
 
 navItems.forEach((navItem, index) => {
   navItem.addEventListener('click', () => {

@@ -172,6 +172,13 @@ h3 {
   height: 7vw;
 }
 
+#back-end > img:nth-child(4) {
+  transform: scale(1.75);
+}
+#back-end > img:nth-child(4):hover {
+  transform: scale(2);
+}
+
 .info-grouper {
   margin-left: 5rem;
   border-left: 2px solid #77FFC0;
