@@ -6,10 +6,6 @@ export default class TechnologyHandler {
 
    constructor() {}
 
-   public getTechnologies(): Technology[] {
-      return this.technologies;
-   }
-
    updateTechInfo(index: number = -1): void {
       const techNameElement =
          document.querySelector<HTMLElement>('#tech-name')!;
@@ -28,7 +24,15 @@ export default class TechnologyHandler {
       }
    }
 
-   public createTechImages(): void {
+   private createImage(imageFileName: string, name: string): HTMLImageElement {
+      const img = document.createElement('img');
+      img.src = `img/technologies/${imageFileName}`;
+      img.alt = name;
+
+      return img;
+   }
+
+   public renderTechImages(): void {
       const backendDiv = document.querySelector('#back-end');
       const databaseDiv = document.querySelector('#database');
       const toolsDiv = document.querySelector('#tools');
@@ -36,9 +40,7 @@ export default class TechnologyHandler {
       if (backendDiv && databaseDiv && toolsDiv) {
          // Para Backend
          this.technologies.slice(4, 8).forEach((tech, index) => {
-            const img = document.createElement('img');
-            img.src = `img/technologies/backend/${tech.imageFileName}`;
-            img.alt = tech.name;
+            const img = this.createImage(tech.imageFileName, tech.name)
 
             img.addEventListener('mouseover', () => {
                this.updateTechInfo(index + 4);
@@ -49,9 +51,7 @@ export default class TechnologyHandler {
 
          // Para Database
          this.technologies.slice(8, 10).forEach((tech, index) => {
-            const img = document.createElement('img');
-            img.src = `img/technologies/database/${tech.imageFileName}`;
-            img.alt = tech.name;
+          const img = this.createImage(tech.imageFileName, tech.name)
 
             img.addEventListener('mouseover', () => {
                this.updateTechInfo(index + 8);
@@ -62,9 +62,7 @@ export default class TechnologyHandler {
 
          // Para Tools
          this.technologies.slice(10, 14).forEach((tech, index) => {
-            const img = document.createElement('img');
-            img.src = `img/technologies/tools/${tech.imageFileName}`;
-            img.alt = tech.name;
+          const img = this.createImage(tech.imageFileName, tech.name)
 
             img.addEventListener('mouseover', () => {
                this.updateTechInfo(index + 10);

@@ -12,17 +12,11 @@ const dropdownItems = document.querySelectorAll<HTMLLIElement>
 
 const techImages = document.querySelectorAll<HTMLImageElement>(".content img");
 
-const habilitiesContainer = document.querySelector<HTMLDivElement>('#habilities-container');
-
 const techHandler = new TechnologyHandler();
 
 document.addEventListener('DOMContentLoaded', () => {
-  techHandler.createTechImages();
+  techHandler.renderTechImages();
 });
-
-habilitiesContainer?.addEventListener('mouseout', () => {
-  techHandler.updateTechInfo();
-})
 
 navItems.forEach((navItem, index) => {
    navItem.addEventListener('click', () => {
