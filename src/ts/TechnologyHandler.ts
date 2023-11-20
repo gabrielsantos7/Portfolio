@@ -29,6 +29,10 @@ export default class TechnologyHandler {
       img.src = `img/technologies/${imageFileName}`;
       img.alt = name;
 
+      img.addEventListener("mouseout", () => {
+        this.updateTechInfo();
+      });
+
       return img;
    }
 
