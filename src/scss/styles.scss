@@ -177,6 +177,51 @@ h3 {
   }
 }
 
+// #ctn-habilities {
+//   border-top: 2px solid $main-white;
+// }
+
+// Carousel
+.carousel-caption{
+  color: $main-black;
+  width: 50%;
+  height: 50vh;
+  margin: 10vh auto;
+
+  display: none;
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+}
+
+.link-grouper {
+  margin-top: 5rem;
+  a {
+    transition: all 0.4s ease-in-out;
+    background: #222;
+
+    &:hover {
+      transform: scale(1.1);
+      background: #222;
+    }
+  }
+}
+
+.carousel-item {
+  &:hover {
+    img {
+      filter: brightness(20%);
+    }
+
+    .carousel-caption {
+      display: block;
+    }
+    
+  }
+}
+
 @media screen and (max-width: 767px) {
   #logo-header {
     height: 60px;
@@ -267,6 +312,34 @@ h3 {
       font-size: 15pt;
       margin-top: 2rem;
       text-align: center;
+    }
+  }
+
+  .carousel-caption {
+    margin: 1.5rem auto;
+    width: 70%;
+    height: 30vw;
+    
+    h5 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.7rem;
+      margin: 0;
+    }
+  }
+
+  .link-grouper {
+    margin-top: 0.5rem;
+
+    a {
+      font-size: 7pt;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }
