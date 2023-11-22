@@ -299,12 +299,13 @@ h3 {
     text-align: center;
   }
   .carousel-caption {
-    margin: 1.5rem auto;
+    margin: 0.75rem auto;
     width: 70%;
     height: 30vw;
   }
   .carousel-caption h5 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-top: -10px;
     font-weight: 600;
   }
   .carousel-caption p {
@@ -319,6 +320,9 @@ h3 {
   }
   .link-grouper a:hover {
     transform: scale(1.05);
+  }
+  .carousel-indicators {
+    margin-bottom: 0.25rem;
   }
 }
 @media screen and (max-width: 576px) {
