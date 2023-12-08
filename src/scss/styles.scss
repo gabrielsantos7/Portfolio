@@ -375,7 +375,7 @@ h3 {
     &:hover {
       color: $primary-green;
       transform: scale(1.1);
-      transition: all 0.5s ease;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
