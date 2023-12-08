@@ -307,6 +307,11 @@ h3 {
     width: 70%;
     height: 30vw;
   }
+  .carousel-caption .tech-grouper img {
+    max-width: 25px;
+    height: auto;
+    margin: 0;
+  }
   .carousel-caption h5 {
     font-size: 0.8rem;
     margin-top: -10px;
@@ -352,7 +357,11 @@ h3 {
     display: none;
   }
   .link-grouper {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+  }
+  .link-grouper a {
+    font-size: 0.5rem;
+    padding: 2px 4px;
   }
   .carousel-caption {
     max-height: 15vh;

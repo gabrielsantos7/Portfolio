@@ -327,6 +327,14 @@ h3 {
     margin: 0.75rem auto;
     width: 70%;
     height: 30vw;
+
+    .tech-grouper {
+      img {
+        max-width: 25px;
+        height: auto;
+        margin: 0;
+      }
+    }
     
     h5 {
       font-size: 0.8rem;
@@ -387,7 +395,11 @@ h3 {
   }
 
   .link-grouper {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    a {
+      font-size: 0.5rem;
+      padding: 2px 4px;
+    }
   }
 
   .carousel-caption {
