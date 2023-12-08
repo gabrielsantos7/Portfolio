@@ -182,6 +182,7 @@ h3 {
 // }
 
 // Carousel
+
 .carousel-caption{
   color: $main-black;
   width: 50%;
@@ -192,6 +193,13 @@ h3 {
   h5 {
     font-size: 1.5rem;
     font-weight: 600;
+  }
+
+  .tech-grouper {
+    img {
+      max-width: 50px;
+      height: auto;
+    }
   }
 
 }
@@ -211,7 +219,7 @@ h3 {
 
 .carousel-item {
   &:hover {
-    img {
+    .img-bg {
       filter: brightness(20%);
     }
 
@@ -349,6 +357,21 @@ h3 {
   }
 }
 
+// Footer
+.social-media {
+  i {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $primary-green;
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+    }
+  }
+}
+
 @media screen and (max-width: 576px) {
   #front-end,
   #back-end,
@@ -357,5 +380,17 @@ h3 {
     img {
       width: 12vw;
     }
+  }
+
+  .caption-project {
+    display: none;
+  }
+
+  .link-grouper {
+    padding-top: 1rem;
+  }
+
+  .carousel-caption {
+    max-height: 15vh;
   }
 }
