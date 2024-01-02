@@ -4,7 +4,7 @@ module.exports = {
   singleQuote: true,
   //"quote": "backtick",
   printWidth: 80,
-  tabWidth: 3,
+  tabWidth: 2,
  "endOfLine": "auto" // lf, crlf
 
 }
